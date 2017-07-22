@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".app.App"
+        android:name="cn.com.proto.app.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="cn.com.proto.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -25,103 +25,103 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".fresco.FrescoViewBigPicActivity"/>
+        <activity android:name="cn.com.proto.fresco.FrescoViewBigPicActivity"/>
         <activity
-            android:name=".anim.ViewPropertyAnimationActivity"
+            android:name="cn.com.proto.anim.ViewPropertyAnimationActivity"
             android:label="@string/app_name" />
         <activity
-            android:name=".scaletransitionanim.ScaleZoomMainActivity"
+            android:name="cn.com.proto.scaletransitionanim.ScaleZoomMainActivity"
             android:label="@string/app_name" />
         <activity
-            android:name=".pullzoom.PullZoomRecyclerViewActivity"
+            android:name="cn.com.proto.pullzoom.PullZoomRecyclerViewActivity"
             android:label="@string/app_name" />
         <activity
-            android:name=".titlebargradient.TitlebarGradientActivity"
-            android:label="@string/app_name" />
-
-        <activity
-            android:name=".transition.ZoomingMainActivity"
+            android:name="cn.com.proto.titlebargradient.TitlebarGradientActivity"
             android:label="@string/app_name" />
 
         <activity
-            android:name=".transition.CrossfadeActivity"
+            android:name="cn.com.proto.transition.ZoomingMainActivity"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="cn.com.proto.transition.CrossfadeActivity"
             android:label="@string/title_crossfade"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="cn.com.proto.MainActivity"
             android:uiOptions="splitActionBarWhenNarrow">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="cn.com.proto.MainActivity" />
         </activity>
 
         <activity
-            android:name=".transition.CardFlipActivity"
+            android:name="cn.com.proto.transition.CardFlipActivity"
             android:label="@string/title_card_flip"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="cn.com.proto.MainActivity"
             android:theme="@style/DarkTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="cn.com.proto.MainActivity" />
         </activity>
 
         <activity
-            android:name=".transition.ScreenSlideActivity"
+            android:name="cn.com.proto.transition.ScreenSlideActivity"
             android:label="@string/title_screen_slide"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="cn.com.proto.MainActivity"
             android:uiOptions="splitActionBarWhenNarrow">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="cn.com.proto.MainActivity" />
         </activity>
 
         <activity
-            android:name=".transition.ZoomActivity"
+            android:name="cn.com.proto.transition.ZoomActivity"
             android:label="@string/title_zoom"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="cn.com.proto.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="cn.com.proto.MainActivity" />
         </activity>
 
         <activity
-            android:name=".transition.LayoutChangesActivity"
+            android:name="cn.com.proto.transition.LayoutChangesActivity"
             android:label="@string/title_layout_changes"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="cn.com.proto.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="cn.com.proto.MainActivity" />
         </activity>
-        <activity android:name=".bigpic.BigPicActivity" />
-        <activity android:name=".bigpic.BigPicActivityTwo" />
-        <activity android:name=".launchmode.LaunchModeActivity" />
+        <activity android:name="cn.com.proto.bigpic.BigPicActivity" />
+        <activity android:name="cn.com.proto.bigpic.BigPicActivityTwo" />
+        <activity android:name="cn.com.proto.launchmode.LaunchModeActivity" />
 
-        <activity android:name=".launchmode.LaunchModeDefaultA" />
-        <activity android:name=".launchmode.LaunchModeDefaultC" />
+        <activity android:name="cn.com.proto.launchmode.LaunchModeDefaultA" />
+        <activity android:name="cn.com.proto.launchmode.LaunchModeDefaultC" />
         <activity
-            android:name=".launchmode.LaunchModeSingleTaskB"
+            android:name="cn.com.proto.launchmode.LaunchModeSingleTaskB"
             android:launchMode="singleTask"
             android:taskAffinity="cn.com.nggirl.testTask" />
         <activity
-            android:name=".launchmode.LaunchModeSingleTaskC"
+            android:name="cn.com.proto.launchmode.LaunchModeSingleTaskC"
             android:launchMode="singleTask"
             android:taskAffinity="cn.com.nggirl.testTask" />
         <activity
-            android:name=".launchmode.LaunchModeSingleInstanceB"
+            android:name="cn.com.proto.launchmode.LaunchModeSingleInstanceB"
             android:launchMode="singleInstance" />
 
-        <activity android:name=".bannerpicscale.BannerPicScaleActivity" />
-        <activity android:name=".bannerpicscale.BannerPicScaleDetailsActivity" />
-        <activity android:name=".retrofit.RetrofitDemoActivity" />
-        <activity android:name=".databinding.DataBindingActivity" />
-        <activity android:name=".databinding.DataBindingRecyclerViewActivity" />
-        <activity android:name=".dagger.DaggerActivity" />
-        <activity android:name=".daggermvp.mainscreen.MainActivity" />
+        <activity android:name="cn.com.proto.bannerpicscale.BannerPicScaleActivity" />
+        <activity android:name="cn.com.proto.bannerpicscale.BannerPicScaleDetailsActivity" />
+        <activity android:name="cn.com.proto.retrofit.RetrofitDemoActivity" />
+        <activity android:name="cn.com.proto.databinding.DataBindingActivity" />
+        <activity android:name="cn.com.proto.databinding.DataBindingRecyclerViewActivity" />
+        <activity android:name="cn.com.proto.dagger.DaggerActivity" />
+        <activity android:name="cn.com.proto.daggermvp.mainscreen.MainActivity" />
 
-        <activity android:name=".aidl.MessengerActivity"/>
-        <activity android:name=".view.ScrollEventConflictActivity"/>
-        <activity android:name=".keyboard.KeyboardEventActivity"/>
-        <activity android:name=".gallery.EasyGalleryActivity"/>
+        <activity android:name="cn.com.proto.aidl.MessengerActivity"/>
+        <activity android:name="cn.com.proto.view.ScrollEventConflictActivity"/>
+        <activity android:name="cn.com.proto.keyboard.KeyboardEventActivity"/>
+        <activity android:name="cn.com.proto.gallery.EasyGalleryActivity"/>
 
-        <service android:name=".aidl.MessengerService"
+        <service android:name="cn.com.proto.aidl.MessengerService"
             android:process=":remote"/>
     </application>
 

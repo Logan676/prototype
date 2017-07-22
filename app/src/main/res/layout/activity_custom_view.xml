@@ -5,7 +5,7 @@
               android:background="#ffffff"
               android:orientation="vertical">
 
-    <cn.com.nggirl.ngdemo.view.HorizontalScrollViewEx
+    <cn.com.proto.view.HorizontalScrollViewEx
         android:id="@+id/container"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"/>

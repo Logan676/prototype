@@ -43,7 +43,7 @@
                  "ToughHighlightImageButton" ImageButton subclass helps achieve this by drawing
                  the standard system "pressed" and "focused" overlay upon user interaction. -->
 
-            <cn.com.nggirl.ngdemo.transition.TouchHighlightImageButton
+            <cn.com.proto.transition.TouchHighlightImageButton
                 android:id="@+id/thumb_button_1"
                 android:layout_width="100dp"
                 android:layout_height="75dp"
@@ -52,14 +52,14 @@
                 android:scaleType="centerCrop"
                 android:contentDescription="@string/description_image_1" />
 
-            <cn.com.nggirl.ngdemo.transition.TouchHighlightImageButton
+            <cn.com.proto.transition.TouchHighlightImageButton
                 android:id="@+id/thumb_button_2"
                 android:layout_width="100dp"
                 android:layout_height="75dp"
                 android:src="@drawable/thumb2"
                 android:scaleType="centerCrop"
                 android:contentDescription="@string/description_image_2" />
-            <cn.com.nggirl.ngdemo.transition.TouchHighlightImageButton
+            <cn.com.proto.transition.TouchHighlightImageButton
                 android:id="@+id/thumb_button_3"
                 android:layout_width="100dp"
                 android:layout_height="75dp"
