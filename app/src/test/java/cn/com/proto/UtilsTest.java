@@ -3,6 +3,10 @@ package cn.com.proto;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
+
 public class UtilsTest {
     @Test
     public void testGroupCount() {
@@ -241,14 +245,14 @@ public class UtilsTest {
     }
 
     /* Function to build a heap */
-    public void heapify(int arr[]) {
+    private void heapify(int arr[]) {
         N = arr.length - 1;
         for (int i = N / 2; i >= 0; i--)
             maxheap(arr, i);
     }
 
     /* Function to swap largest element in heap */
-    public void maxheap(int arr[], int i) {
+    private void maxheap(int arr[], int i) {
         int left = 2 * i;
         int right = 2 * i + 1;
         int max = i;
@@ -264,9 +268,154 @@ public class UtilsTest {
     }
 
     /* Function to swap two numbers in an array */
-    public void swap(int arr[], int i, int j) {
+    private void swap(int arr[], int i, int j) {
         int tmp = arr[i];
         arr[i] = arr[j];
         arr[j] = tmp;
+    }
+
+    private Map<Integer, Integer> map = new HashMap<>();
+
+    private int combinationSum4(int[] nums, int target) {
+        int count = 0;
+        if (nums == null || nums.length == 0 || target < 0) return 0;
+        if (target == 0) return 1;
+        if (map.containsKey(target)) return map.get(target);
+        for (int num : nums) {
+            count += combinationSum4(nums, target - num);
+            //System.out.println("" + (target - num));
+        }
+
+        System.out.println("" + count);
+        map.put(target, count);
+        return count;
+    }
+
+    @Test
+    public void testCombinationSum() {
+        int[] arr = {1, 2, 3, 4};
+        combinationSum4(arr, 5);
+    }
+
+    private class Status {
+        int[] data;
+        int length;
+
+        Status() {
+            this.data = new int[20];
+            length = 0;
+        }
+
+        void clear() {
+            data = new int[20];
+            length = 0;
+        }
+    }
+
+    Status initList() {
+        return new Status();
+    }
+
+    private void insertList(Status L, int i, int e) {
+        int k;
+        if (L.length == 20) {
+            return;
+        }
+
+        if (i < 1 || i > L.length + 1) {
+            return;
+        }
+
+        if (i <= L.length) {
+            for (k = L.length - 1; k >= i - 1; k--) {
+                L.data[k + 1] = L.data[k];
+            }
+        }
+
+        L.data[i - 1] = e;
+        L.length++;
+    }
+
+    @Test
+    public void testInsertList() {
+        final Status l = initList();
+        System.out.println("初始化L后：L.length=" + l.length);
+        for (int j = 1; j <= 10; j++)
+            insertList(l, 1, j);
+
+        StringBuilder s1 = new StringBuilder();
+        for (int m = 0; m < l.length; m++) {
+            if (m < l.length - 1)
+                s1.append(l.data[m] + ", ");
+            else
+                s1.append(l.data[m]);
+        }
+
+        System.out.println("在L的表头依次插入1~10后：L.data=" + s1.toString());
+
+        l.clear();
+        System.out.println("清空L后：L.length=" + l.length);
+
+        for (int j = 1; j <= 10; j++)
+            insertList(l, j, j);
+
+        StringBuilder s2 = new StringBuilder();
+        for (int m = 0; m < l.length; m++) {
+            if (m < l.length - 1)
+                s2.append(l.data[m] + ", ");
+            else
+                s2.append(l.data[m]);
+        }
+
+        System.out.println("在L的表尾依次插入1~10后：L.data=" + s2.toString());
+
+        insertList(l, 3, 20);
+
+        StringBuilder s = new StringBuilder();
+        for (int m = 0; m < l.length; m++) {
+            if (m < l.length - 1)
+                s.append(l.data[m] + ", ");
+            else
+                s.append(l.data[m]);
+        }
+        System.out.println("在L的表中第3位置插入20后：L.data=" + s.toString());
+    }
+
+    @Test
+    public void TestContainsElem() {
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        for (int i = 1; i <= 10; i++)
+            linkedList.add(i);
+
+        for (Integer i : linkedList)
+            System.out.println("node " + i);
+
+        linkedList.add(11);
+
+        Assert.assertEquals(linkedList.contains(3), true);
+        Assert.assertEquals(linkedList.contains(11), true);
+    }
+
+    @Test
+    public void testPlusPlus() {
+        // i++ ：先引用，后增加
+        // ++i ：先增加，后引用
+
+        int i, x;
+        i = 1;
+        x = 1;
+        x = i++;  //先让x变成i的值1，再让i加1
+        System.out.printf("%d\n", x);     //x=1
+        System.out.printf("%d\n", i);     //i=2
+
+        Assert.assertEquals(x, 1);
+
+        i = 1;
+        x = 1;
+        x = ++i;  //先让i加1, 再让x变成i的值2
+        System.out.printf("%d\n", x);    //x=2
+        System.out.printf("%d\n", i);    //i=2
+
+        Assert.assertEquals(x, 2);
     }
 }
