@@ -4,7 +4,7 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.facebook.drawee.view.SimpleDraweeView;
 
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 import cn.com.proto.anim.Status;
 import cn.com.proto.business.DataServer;
 

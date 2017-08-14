@@ -16,7 +16,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.bingoogolapple.bgabanner.BGABanner;
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 
 public class BannerPicScaleDetailsActivity extends AppCompatActivity {
 

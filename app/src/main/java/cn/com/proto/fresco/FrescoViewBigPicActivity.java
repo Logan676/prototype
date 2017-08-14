@@ -10,7 +10,7 @@ import com.facebook.drawee.view.SimpleDraweeView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 
 public class FrescoViewBigPicActivity extends AppCompatActivity {
 

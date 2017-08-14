@@ -26,7 +26,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 
 /**
  * This sample demonstrates cross-fading between two overlapping views.

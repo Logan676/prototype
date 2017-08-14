@@ -15,7 +15,7 @@ import com.chad.library.adapter.base.BaseViewHolder;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.com.proto.business.DataServer;
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 
 public class KeyboardEventActivity extends AppCompatActivity {
 

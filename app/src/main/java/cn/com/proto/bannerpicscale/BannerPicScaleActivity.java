@@ -11,7 +11,7 @@ import android.widget.Button;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 
 /**
  * 焦点图图片展示效果

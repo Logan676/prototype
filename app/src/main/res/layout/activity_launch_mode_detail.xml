@@ -5,10 +5,19 @@
     android:gravity="center"
     android:orientation="vertical">
 
+    <cn.com.proto.view.LTabTextView
+        android:id="@+id/tv_test_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_16"
+        android:text="测试小红点"/>
+
     <Button
         android:id="@+id/btn_launch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
         android:layout_gravity="center"
         android:text="启动" />
 

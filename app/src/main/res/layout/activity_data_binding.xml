@@ -5,11 +5,11 @@
 
         <variable
             name="temp"
-            type="cn.com.nggirl.ngdemo.databinding.TemperatureData"/>
+            type="cn.com.proto.databinding.TemperatureData"/>
 
         <variable
             name="presenter"
-            type="cn.com.nggirl.ngdemo.databinding.DataBindingPresenter"/>
+            type="cn.com.proto.databinding.DataBindingPresenter"/>
     </data>
 
     <LinearLayout

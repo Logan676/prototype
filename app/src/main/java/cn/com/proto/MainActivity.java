@@ -24,7 +24,7 @@ import butterknife.OnClick;
 import cn.com.proto.anim.ViewPropertyAnimationActivity;
 import cn.com.proto.bigpic.BigPicActivity;
 import cn.com.proto.databinding.DataBindingActivity;
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 import cn.com.proto.aidl.MessengerActivity;
 import cn.com.proto.bannerpicscale.BannerPicScaleActivity;
 import cn.com.proto.bigpic.BigPicActivityTwo;

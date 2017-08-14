@@ -29,7 +29,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 
 /**
  * Demonstrates a "card-flip" animation using custom fragment transactions ({@link

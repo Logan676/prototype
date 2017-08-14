@@ -16,7 +16,7 @@ import com.lzy.okgo.callback.FileCallback;
 
 import java.io.File;
 
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 import okhttp3.Call;
 import okhttp3.Response;
 

@@ -23,7 +23,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 
 /**
  * A fragment representing a single step in a wizard. The fragment shows a dummy title indicating

@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import cn.com.proto.ColorUtil;
 import cn.com.proto.CommonAdapter;
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 
 /**
  * 标题栏随着RecyclerView滚动背景渐变

@@ -15,7 +15,7 @@ import java.util.List;
 import javax.inject.Inject;
 
 import cn.com.proto.daggermvp.util.EspressoIdlingResource;
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 import cn.com.proto.daggermvp.App;
 import cn.com.proto.daggermvp.data.Post;
 

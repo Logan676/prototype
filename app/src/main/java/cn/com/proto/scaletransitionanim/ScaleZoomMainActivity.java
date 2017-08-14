@@ -22,7 +22,7 @@ import com.chad.library.adapter.base.listener.OnItemClickListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 
 public class ScaleZoomMainActivity extends AppCompatActivity {
 

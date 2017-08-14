@@ -10,7 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import java.util.Arrays;
 import java.util.List;
 
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 
 public class DataBindingRecyclerViewActivity extends AppCompatActivity {
 

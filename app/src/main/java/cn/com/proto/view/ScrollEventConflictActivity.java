@@ -18,7 +18,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import cn.com.proto.DensityUtils;
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 
 
 public class ScrollEventConflictActivity extends AppCompatActivity {

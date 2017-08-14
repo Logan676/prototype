@@ -31,7 +31,7 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 
 /**
  * A sample showing how to zoom an image thumbnail to full-screen, by animating the bounds of the

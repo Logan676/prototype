@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 
 public class LaunchModeDefaultC extends AppCompatActivity {
 

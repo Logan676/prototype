@@ -17,7 +17,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 import cn.com.proto.business.bean.Contributor;
 
 public class RetrofitDemoActivity extends AppCompatActivity implements RetrofitDemoContract.View {

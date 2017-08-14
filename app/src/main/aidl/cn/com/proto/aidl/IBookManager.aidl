@@ -1,8 +1,8 @@
 // IBookManager.aidl
-package cn.com.nggirl.ngdemo.aidl;
+package cn.com.proto.aidl;
 
 // Declare any non-default types here with import statements
-import cn.com.nggirl.ngdemo.aidl.Book;
+import cn.com.proto.aidl.Book;
 interface IBookManager {
 
     List<Book> getBookList();

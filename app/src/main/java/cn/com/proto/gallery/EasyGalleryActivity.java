@@ -45,7 +45,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.com.proto.FileOperationUtils;
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 
 public class EasyGalleryActivity extends AppCompatActivity {
     public static final String TAG = EasyGalleryActivity.class.getSimpleName();

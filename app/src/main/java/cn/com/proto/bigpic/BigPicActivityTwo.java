@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.github.piasy.biv.view.BigImageView;
 
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 
 public class BigPicActivityTwo extends AppCompatActivity {
 

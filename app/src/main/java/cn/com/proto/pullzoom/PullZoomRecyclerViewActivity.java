@@ -14,7 +14,7 @@ import com.chad.library.adapter.base.BaseViewHolder;
 import com.dinuscxj.pullzoom.PullZoomRecyclerView;
 
 import cn.com.proto.business.DataServer;
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 
 /**
  * 下拉放大

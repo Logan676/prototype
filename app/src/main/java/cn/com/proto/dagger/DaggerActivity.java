@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import javax.inject.Inject;
 
-import cn.com.nggirl.ngdemo.R;
+import cn.com.proto.R;
 import dagger.android.AndroidInjection;
 
 public class DaggerActivity extends AppCompatActivity {
