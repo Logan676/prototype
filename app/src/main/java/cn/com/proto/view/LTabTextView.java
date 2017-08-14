@@ -12,12 +12,13 @@ import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import cn.com.proto.R;
 
-public class LTabTextView extends LinearLayout {
+public class LTabTextView extends FrameLayout {
 
     private TextView mTextView;
     private TextView mTextViewBubble;
@@ -191,23 +192,46 @@ public class LTabTextView extends LinearLayout {
     }
 
     private void init(Context context) {
-        /*setLayoutParams(new MarginLayoutParams(1000, 500));
+        setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT,
+                FrameLayout.LayoutParams.WRAP_CONTENT));
+        /*
 
 
         setPadding(10, 10, 10, 10);*/
 
-        setGravity(VERTICAL);
         setBackgroundColor(getResources().getColor(R.color.forestgreen));
 
         mTextView = new TextView(context);
         mTextView.setText("下载中");
         mTextView.setTextColor(getResources().getColor(R.color.black));
 
+        final LayoutParams params = new LayoutParams(LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        params.topMargin = 17;
+        params.leftMargin = 10;
+        params.rightMargin = 17;
+        params.bottomMargin = 10;
+        params.gravity = Gravity.CENTER;
+        addView(mTextView,params);
 
         mTextViewBubble = new TextView(context);
         mTextViewBubble.setText("26");
         mTextViewBubble.setTextSize(8);
         mTextViewBubble.setTextColor(getResources().getColor(R.color.white));
+
+
+        mGradientDrawable = new GradientDrawable();
+        mGradientDrawable.setShape(GradientDrawable.OVAL);
+        mGradientDrawable.setCornerRadius(10);
+        mGradientDrawable.setColor(getResources().getColor(R.color.red));
+        mTextViewBubble.setBackgroundDrawable(mGradientDrawable);
+
+        mTextViewBubble.setGravity(Gravity.CENTER);
+
+        final LayoutParams params2 = new LayoutParams(50, 30);
+        params2.gravity = Gravity.TOP | Gravity.RIGHT;
+        mTextViewBubble.setLayoutParams(params2);
+
+        addView(mTextViewBubble);
 
         _density = context.getResources().getDisplayMetrics().density;
         tPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -220,18 +244,6 @@ public class LTabTextView extends LinearLayout {
         circlePaint.setColor(circleColor);
         circlePaint.setStrokeWidth(circlestrokeWidth);
         circlePaint.setStyle(Style.FILL);
-
-        addView(mTextView);
-        final LayoutParams params = new LayoutParams(50, 30);
-        addView(mTextViewBubble, params);
-        mTextViewBubble.setGravity(Gravity.CENTER);
-
-
-        mGradientDrawable = new GradientDrawable();
-        mGradientDrawable.setShape(GradientDrawable.OVAL);
-        mGradientDrawable.setCornerRadius(10);
-        mGradientDrawable.setColor(getResources().getColor(R.color.red));
-        mTextViewBubble.setBackgroundDrawable(mGradientDrawable);
     }
 
 
